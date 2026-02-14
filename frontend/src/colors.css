@@ -1,0 +1,58 @@
+:root {
+  /* Primary colors */
+  --color-primary: #000000;
+  --color-primary-foreground: #ffffff;
+
+  /* Secondary colors */
+  --color-secondary: #ffffff;
+  --color-secondary-foreground: #000000;
+
+  /* Gray colors for text and backgrounds */
+  --color-gray-900: #111827;
+  --color-gray-800: #1f2937;
+  --color-gray-700: #374151;
+  --color-gray-600: #4b5563;
+  --color-gray-500: #6b7280;
+  --color-gray-400: #9ca3af;
+  --color-gray-300: #d1d5db;
+  --color-gray-200: #e5e7eb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-50: #fafafa;
+
+  /* Backgrounds */
+  --color-background: #ffffff;
+  --color-background-dark: #111827;
+  --color-background-secondary: #f3f4f6;
+  --color-background-secondary-dark: #1f2937;
+
+  /* Borders */
+  --color-border: #e5e7eb;
+  --color-border-dark: #374151;
+
+  /* Buttons */
+  --color-button-primary: #000000;
+  --color-button-primary-foreground: #ffffff;
+  --color-button-secondary: #ffffff;
+  --color-button-secondary-foreground: #000000;
+  --color-button-hover: #f3f4f6;
+  --color-button-hover-dark: #374151;
+}
+
+.dark {
+  --color-primary: #ffffff;
+  --color-primary-foreground: #000000;
+  --color-secondary: #000000;
+  --color-secondary-foreground: #ffffff;
+  --color-background: #111827;
+  --color-background-dark: #000000;
+  --color-background-secondary: #1f2937;
+  --color-background-secondary-dark: #111827;
+  --color-border: #374151;
+  --color-border-dark: #1f2937;
+  --color-button-primary: #ffffff;
+  --color-button-primary-foreground: #000000;
+  --color-button-secondary: #000000;
+  --color-button-secondary-foreground: #ffffff;
+  --color-button-hover: #374151;
+  --color-button-hover-dark: #1f2937;
+}
