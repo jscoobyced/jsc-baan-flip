@@ -1,6 +1,8 @@
-# React + TypeScript + Vite Starter
+# # Baan Flip Frontend Application - Front-End
 
-A modern React application scaffolding with TypeScript, Vite, Tailwind CSS, and testing pre-configured.
+Built with a modern React application scaffolding with TypeScript, Vite, Tailwind CSS, and testing pre-configured.
+
+Using [create-jsc-vite-react-ts](https://www.npmjs.com/package/create-jsc-vite-react-ts) for super fast scaffolding of the base application.
 
 ## What's Included
 
@@ -58,12 +60,17 @@ yarn preview
 
 ```
 src/
-├── components/       # React components
-├── contexts/         # React contexts and providers
-├── hooks/           # Custom React hooks
-├── test/            # Test setup and utilities
-├── App.tsx          # Main application component
-└── main.tsx         # Application entry point
+├── components/             # React components
+├── contexts/               # React contexts and providers
+│   ├── ThemeContext.tsx    # Theme context for dark/light mode
+│   └── theme.test.ts       # Theme context tests
+├── hooks/                  # Custom React hooks
+│   └── useTheme.ts         # Custom hook for accessing theme context
+├── services/               # Application services
+│   └── ContentManager.ts   # Content management service
+├── test/                   # Test setup and utilities
+├── App.tsx                 # Main application component
+└── main.tsx                # Application entry point
 ```
 
 ## Key Features
