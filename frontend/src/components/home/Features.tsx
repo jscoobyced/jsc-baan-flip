@@ -30,7 +30,7 @@ const Features = ({
             aria-label="Find Programs"
           >
             <div className="bg-secondary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-              <span className="text-2xl text-primary">1</span>
+              <span className="text-2xl text-secondary-foreground">1</span>
             </div>
             <h3 className="text-xl font-semibold text-primary-foreground mb-2">
               {findProgramsTitle}
@@ -43,7 +43,7 @@ const Features = ({
             aria-label="Report Vulnerabilities"
           >
             <div className="bg-secondary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-              <span className="text-2xl text-primary">2</span>
+              <span className="text-2xl text-secondary-foreground">2</span>
             </div>
             <h3 className="text-xl font-semibold text-primary-foreground mb-2">
               {findRenovationTitle}
@@ -56,7 +56,7 @@ const Features = ({
             aria-label="Get Rewarded"
           >
             <div className="bg-secondary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-              <span className="text-2xl text-primary">3</span>
+              <span className="text-2xl text-secondary-foreground">3</span>
             </div>
             <h3 className="text-xl font-semibold text-primary-foreground mb-2">
               {getRewardedTitle}

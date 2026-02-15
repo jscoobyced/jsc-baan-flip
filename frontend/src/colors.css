@@ -1,27 +1,32 @@
 @theme {
   /* Primary colors */
-  --color-primary: #f3f4f6;
+  --color-primary: #ffffff;
   --color-primary-foreground: #111827;
 
   /* Secondary colors */
-  --color-secondary: #1f2937;
-  --color-secondary-foreground: #9ca3af;
+  --color-secondary: #f3f4f6;
+  --color-secondary-foreground: #4b5563;
 
   /* Button colors */
   --color-button-primary: #3b82f6;
   --color-button-primary-hover: #2563eb;
   --color-button-primary-active: #1d4ed8;
-  --color-button-secondary: #6b7280;
-  --color-button-secondary-hover: #4b5563;
-  --color-button-secondary-active: #374151;
+  --color-button-secondary: #e5e7eb;
+  --color-button-secondary-hover: #d1d5db;
+  --color-button-secondary-active: #9ca3af;
 }
 
 .dark {
   /* Primary colors */
-  --color-secondary: #9ca3af;
-  --color-secondary-foreground: #111827;
+  --color-primary: #111827;
+  --color-primary-foreground: #ffffff;
 
   /* Secondary colors */
-  --color-primary: #1f2937;
-  --color-primary-foreground: #ffffff;
+  --color-secondary: #1f2937;
+  --color-secondary-foreground: #d1d5db;
+
+  /* Button colors for dark mode */
+  --color-button-secondary: #374151;
+  --color-button-secondary-hover: #4b5563;
+  --color-button-secondary-active: #6b7280;
 }
