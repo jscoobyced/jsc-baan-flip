@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 interface FooterProps {
   footerCompany: string
   footerTerms: string
@@ -18,27 +20,32 @@ export const Footer = ({
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
-            <p className="font-semibold">{footerCompany}</p>
+            <Link
+              to="/"
+              className="font-semibold hover:text-primary-foreground transition-colors"
+            >
+              {footerCompany}
+            </Link>
           </div>
           <div className="flex space-x-6">
-            <a
-              href="#"
+            <Link
+              to="#"
               className="hover:text-primary-foreground transition-colors"
             >
               {footerTerms}
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="#"
               className="hover:text-primary-foreground transition-colors"
             >
               {footerPrivacy}
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="/about-us"
               className="hover:text-primary-foreground transition-colors"
             >
               {aboutUs}
-            </a>
+            </Link>
           </div>
         </div>
         <div className="mt-6 text-sm">

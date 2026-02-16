@@ -1,3 +1,4 @@
+import { ScrollRestoration } from 'react-router-dom'
 import { ContentManager } from '../../services/ContentManager'
 import Features from '../home/Features'
 import Hero from '../home/Hero'
@@ -46,6 +47,7 @@ const Home = ({ contentManager }: HomeProps) => {
         ctaSubtitle={contentManager.getContent('cta_subtitle')}
         ctaButtonText={contentManager.getContent('cta_button_4')}
       />
+      <ScrollRestoration />
     </main>
   )
 }

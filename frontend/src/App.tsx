@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
+import { Outlet, ScrollRestoration } from 'react-router-dom'
 import { Footer } from './components/common/Footer'
 import { LanguageSelector } from './components/common/LanguageSelector'
-import Home from './components/home/Home'
 import { contentManager } from './services/ContentManager'
 
 const App = () => {
@@ -37,15 +37,18 @@ const App = () => {
           onChangeLanguage={changeLanguage}
         />
       </div>
-      {contentLoaded ? (
-        <Home contentManager={contentManager} />
-      ) : (
-        <div className="flex justify-center items-center h-screen">
-          <p className="text-2xl font-semibold text-primary-foreground">
-            Loading...
+      {!contentLoaded && (
+        <div
+          className="grow flex items-center justify-center"
+          role="status"
+          aria-live="polite"
+        >
+          <p className="text-secondary-foreground text-lg">
+            Loading content...
           </p>
         </div>
       )}
+      {contentLoaded && <Outlet />}
       <Footer
         footerCompany={contentManager.getContent('footer_company')}
         footerTerms={contentManager.getContent('footer_terms')}
@@ -58,6 +61,7 @@ const App = () => {
           },
         )}
       />
+      <ScrollRestoration />
     </div>
   )
 }
