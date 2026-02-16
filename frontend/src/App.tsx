@@ -50,7 +50,7 @@ const App = () => {
         footerCompany={contentManager.getContent('footer_company')}
         footerTerms={contentManager.getContent('footer_terms')}
         footerPrivacy={contentManager.getContent('footer_privacy')}
-        footerCareers={contentManager.getContent('footer_careers')}
+        aboutUs={contentManager.getContent('about_us')}
         footerCopyright={contentManager.getContentWithParams(
           'footer_copyright',
           {

@@ -2,7 +2,7 @@ interface FooterProps {
   footerCompany: string
   footerTerms: string
   footerPrivacy: string
-  footerCareers: string
+  aboutUs: string
   footerCopyright: string
 }
 
@@ -10,7 +10,7 @@ export const Footer = ({
   footerCompany,
   footerTerms,
   footerPrivacy,
-  footerCareers,
+  aboutUs,
   footerCopyright,
 }: FooterProps) => {
   return (
@@ -37,7 +37,7 @@ export const Footer = ({
               href="#"
               className="hover:text-primary-foreground transition-colors"
             >
-              {footerCareers}
+              {aboutUs}
             </a>
           </div>
         </div>

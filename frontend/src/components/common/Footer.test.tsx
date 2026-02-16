@@ -11,7 +11,7 @@ describe('Footer', () => {
           footerCompany="Homeowners and Flippers Platform"
           footerTerms="Terms"
           footerPrivacy="Privacy"
-          footerCareers="Careers"
+          aboutUs="Careers"
           footerCopyright={`© ${new Date().getFullYear()} HackerOne. All rights reserved.`}
         />
       </ThemeProvider>,
@@ -28,7 +28,7 @@ describe('Footer', () => {
           footerCompany="Homeowners and Flippers Platform"
           footerTerms="Terms"
           footerPrivacy="Privacy"
-          footerCareers="Careers"
+          aboutUs="Careers"
           footerCopyright={`© ${new Date().getFullYear()} HackerOne. All rights reserved.`}
         />
       </ThemeProvider>,
